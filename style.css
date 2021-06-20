@@ -1,0 +1,63 @@
+.body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 57px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  animation: topBarAnim 20s infinite;
+  color: #fff;
+}
+
+@keyframes topBarAnim {
+  0%{
+    box-shadow: 0 0 500px #3498db inset;
+  }
+  30%{
+    box-shadow: 0 0 500px #8e44ad inset;
+  }
+  60%{
+    box-shadow: 0 0 500px #16a085 inset;
+  }
+  80%{
+    box-shadow: 0 0 500px #f39c12 inset;
+  }
+  100%{
+    box-shadow: 0 0 500px #3498db inset;
+  }
+}
+
+.top-bar a{
+  display: block;
+  font-family: Arial;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.text{
+  display: block;
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  text-align: center;
+  color: rgb(105, 132, 192);
+  margin: 0;
+  padding: 0;
+}
+
+#map{
+height: 1000px;
+width: 100%;
+}
