@@ -1,4 +1,4 @@
-var map = L.map('map').setView([50.4, 30.52], 3);
+var map = L.map('map').setView([50.4, 30.52], 6);
 
 
 
@@ -8,7 +8,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   id: 'mapbox/light-v10',
   tileSize: 512,
   zoomOffset: -1,
-  accessToken: 'pk.eyJ1Ijoicm9tYW4wMSIsImEiOiJja2FjZGlyeTQxZnJhMzZxd2l0d3E1eXFjIn0.nbSZ1mtMKkfd29tl5vFDow'
+  accessToken: 'pk.eyJ1IjoidHNjaGVybnlzaCIsImEiOiJja3E2bzUwczQwamI2MnVtbXI1aHV1YXhkIn0.6qD6XkfJTzKQHLy34ZSiAw'
   }).addTo(map);
 
 async function weather(lat, long) {
@@ -20,7 +20,7 @@ async function weather(lat, long) {
 
   var myIcon = L.icon({
     iconUrl: `http://openweathermap.org/img/w/${weather.icon}.png`,
-    iconSize: [50, 50],
+    iconSize: [100, 100],
     iconAnchor: [25, 25],
 
     });
@@ -32,13 +32,14 @@ async function weather(lat, long) {
   }
 
 
-weather(50.71, -60.005);
-weather(49.14, 28);
-weather(30.8, 10.97);
-weather(10.6, 81.11);
-weather(-20.9, 20.26);
-weather(11.99, 99.43);
-weather(60.2, 90.44);
-weather(40.71, -74.005);
-weather(44.33, -88.33);
-weather(11.99, 3.43);
+weather(52.31, 13.24);
+weather(48.51, 2.20);
+weather(49.13, 28.28);
+weather(53.53, 27.34);
+weather(52.13, 21);
+weather(44.25, 26.06);
+weather(47.29, 19.02);
+weather(50.27, 30.31);
+weather(55.45, 37.36);
+weather(48.12, 16.22);
+weather(41.53, 12.30);
